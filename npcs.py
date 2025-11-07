@@ -1,8 +1,15 @@
-npcs=[["Raul",(5,15)],["Maria",(15,5)],["Carlos",(10,10)]]
+npcs=[[],[],[]]
 maioratk=0
 maiordef=0
 atknome=""
 defnome=""
+counter=0
+while counter<3:
+    nome=input("Nome do player: ")
+    atk=int(input("Ataque: "))
+    defs=int(input("Defesa: "))
+    npcs[counter]=[nome,(atk,defs)]
+    counter+=1
 for i in npcs:
     atk,defs=i[1]
     print(i[0])
